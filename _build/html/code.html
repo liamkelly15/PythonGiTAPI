@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Auto Generated Documentation &#8212; GitLab Management Tool 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Project Summary" href="project.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="auto-generated-documentation">
+<h1>Auto Generated Documentation<a class="headerlink" href="#auto-generated-documentation" title="Permalink to this headline">¶</a></h1>
+<p>#.. automodule::gitlabManager
+#   :members:</p>
+<p>#.. autoclass:: gitlabManager.GitlabManager
+#   :members:</p>
+<dl class="class">
+<dt id="auth.Auth">
+<em class="property">class </em><code class="sig-prename descclassname">auth.</code><code class="sig-name descname">Auth</code><span class="sig-paren">(</span><em class="sig-param">username</em>, <em class="sig-param">token</em>, <em class="sig-param">certificatePath=None</em>, <em class="sig-param">httpProxy=None</em>, <em class="sig-param">httpsProxy=None</em><span class="sig-paren">)</span><a class="headerlink" href="#auth.Auth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Auth Class represents a connection to the GitLab library with a Username and Token</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="projects.Project">
+<em class="property">class </em><code class="sig-prename descclassname">projects.</code><code class="sig-name descname">Project</code><span class="sig-paren">(</span><em class="sig-param">projects</em>, <em class="sig-param">namespaces</em><span class="sig-paren">)</span><a class="headerlink" href="#projects.Project" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Project Class represents an instance of all the GitLab Projects and assocaited Namespaces - The projects paramater is an API call 
+on a GitLab object to all the projects</p>
+<dl class="method">
+<dt id="projects.Project.checkifprojectnameexists">
+<code class="sig-name descname">checkifprojectnameexists</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#projects.Project.checkifprojectnameexists" title="Permalink to this definition">¶</a></dt>
+<dd><p>The checkifprojectnameexists function is used to check if a Project name is already in use before attempting 
+to create a new Project using that name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="projects.Project.createProject">
+<code class="sig-name descname">createProject</code><span class="sig-paren">(</span><em class="sig-param">namespace</em>, <em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#projects.Project.createProject" title="Permalink to this definition">¶</a></dt>
+<dd><p>The createProject function is used to create a new Project in GitLab - The namespace and a Project name are required as paramaters</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="projects.Project.listProjectsPaths">
+<code class="sig-name descname">listProjectsPaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#projects.Project.listProjectsPaths" title="Permalink to this definition">¶</a></dt>
+<dd><p>The listProjectsPath function will list all the GitLab projects the current user has membership of</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="groups.Groups">
+<em class="property">class </em><code class="sig-prename descclassname">groups.</code><code class="sig-name descname">Groups</code><span class="sig-paren">(</span><em class="sig-param">groups</em><span class="sig-paren">)</span><a class="headerlink" href="#groups.Groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the Groups Class</p>
+<dl class="method">
+<dt id="groups.Groups.addUserToGroup">
+<code class="sig-name descname">addUserToGroup</code><span class="sig-paren">(</span><em class="sig-param">userId</em>, <em class="sig-param">groupId</em>, <em class="sig-param">accessLevel</em><span class="sig-paren">)</span><a class="headerlink" href="#groups.Groups.addUserToGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the addUserToGroup function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="groups.Groups.listGroupMembers">
+<code class="sig-name descname">listGroupMembers</code><span class="sig-paren">(</span><em class="sig-param">groupId</em><span class="sig-paren">)</span><a class="headerlink" href="#groups.Groups.listGroupMembers" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the listGroupMembers function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="groups.Groups.listGroups">
+<code class="sig-name descname">listGroups</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#groups.Groups.listGroups" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the listGroups function</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">GitLab Management Tool</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">GitLab Management Tool Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Project Summary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Auto Generated Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="project.html" title="previous chapter">Project Summary</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Peter Murray & Liam Kelly.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/code.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

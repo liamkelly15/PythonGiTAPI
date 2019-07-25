@@ -1,0 +1,12 @@
+{
+    "id":"",
+    "commit_message_regex":"(Feature|Bugfix)\\|\\s?([A-Z]{1,}([0-9]?)+)+\\-\\d+\\s?\\|\\s?\\w+.*",
+    "commit_message_negative_regex":" ",
+    "branch_name_regex":"(feature|bugfix)\\/\\s?([A-Z]{1,}([0-9]?)+)+\\-\\d+",
+    "deny_delete_tag":"True",
+    "member_check":"True",
+    "prevent_secrets":"False",
+    "author_email_regex":".+@firstdata.com$",
+    "file_name_regex": "",
+    "max_file_size":100
+}
